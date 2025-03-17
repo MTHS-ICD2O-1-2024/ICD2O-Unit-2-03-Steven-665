@@ -1,12 +1,17 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: yi.zhou
+// Created on: Mar 2025
 // This file contains the JS functions for index.html
 
 /**
- * Displays an alert with the message "Hello, World!"
+ * Do basic math.
  */
-function myButtonClicked() {
-  alert("Hello, World!")
+function enterClicked() {
+  // input
+  const Streetnumber = document.getElementById("Street-number").value
+  const Streetname = parseInt(document.getElementById("Street-name").value)
+  // output
+  document.getElementById("user-info").innerHTML =
+    "Your info is: " + Streetnumber + ", " + Streetname + "."
 }
